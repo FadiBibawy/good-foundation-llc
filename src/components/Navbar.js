@@ -35,7 +35,7 @@ const Navbar = () => {
             to="services"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-10}
             duration={500}
             // scroll={false}
             className="px-5 py-2 rounded hover:bg-gray-100"
@@ -47,7 +47,7 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={50}
+          offset={0}
           duration={500}
           className="w-full px-5 py-2 text-center text-white bg-blue-600 rounded shadow hover:bg-blue-500"
           scroll={false}

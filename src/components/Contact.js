@@ -10,13 +10,12 @@ const Contact = () => {
     <div className="w-full py-10" id="contact">
       <div className="relative flex flex-col px-5 mx-auto space-y-5 md:w-4/4">
         <div className="flex flex-col items-center">
-          <h6 className="font-bold text-center text-blue-600 uppercase mb-5">
+          <h6 className="font-bold text-center text-blue-600 uppercase mb-3">
             Contact Us
           </h6>
           <h2 className="text-4xl font-bold text-center">
             <span className="block">
-              Do you have any questions? Reach out to us, your gateway to
-              helpful guidance.
+              Do you have any questions? Reach out to us.
             </span>
           </h2>
           {/* <p className="text-center text-gray-600">
@@ -24,9 +23,9 @@ const Contact = () => {
             system
           </p> */}
         </div>
-        <div className="flex flex-col p-10 space-x-0 space-y-5 bg-gray-200 rounded-lg md:space-y-0 md:space-x-5 md:flex-row">
-          <div className="container my-24 mx-auto md:px-6">
-            <section className="mb-32 text-center">
+        <div className="flex flex-col align-items-center p-10 space-x-0 space-y-5 bg-gray-100 rounded-lg md:space-y-0 md:space-x-5 md:flex-row">
+          <div className="container my-5 mx-auto md:px-6">
+            <section className="mb-3 text-center">
               <div className="mx-auto max-w-[700px] md:px-3">
                 {/* <h2 class="mb-12 text-3xl font-bold">Contact us</h2> */}
                 <form>
@@ -103,7 +102,7 @@ const Contact = () => {
           </div>
 
           <div
-            className="flex flex-col items-start overflow-hidden bg-white border rounded-lg md:w-1/2"
+            className="flex flex-col items-start overflow-hidden bg-white border rounded-lg md:w-1/3"
             style={{ minWidth: "fit-content" }}
           >
             <div className="w-full p-10 space-y-5 text-center">
@@ -115,27 +114,26 @@ const Contact = () => {
                 <small className="text-lg text-gray-400">per month</small>
               </h2> */}
             </div>
-            <div className="flex flex-col w-full h-full px-7 py-10 space-y-5 bg-gray-100 border-t">
+            <div className="flex flex-col w-full h-full px-7 py-4 space-y-5 bg-gray-100 border-t">
               <a
-                className="px-10 py-3  text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
+                className="px-2 py-3 flex flex-col  text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
                 href="Tel: 727-439-9986 "
               >
                 <FontAwesomeIcon icon={faPhone} size="xl" className="mb-3" />
-                <p style={{ width: "100%", fontSize: "0.9em" }}>727-439-9986</p>
+                <p style={{ width: "100%", margin: "0" }}>727-439-9986</p>
               </a>
               <a
-                className="px-1 py-3  text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
+                className="px-2 py-3 flex flex-col text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
                 href="mailto:goodfoundationllc@gmail.com"
                 // style={{ marginTop: '50px' }}
               >
                 <FontAwesomeIcon icon={faEnvelope} size="xl" className="mb-3" />
-                <br></br>
-                <p style={{ width: "100%", fontSize: "0.9em" }}>
+                <p style={{ width: "100%", margin: "0" }}>
                   goodfoundationllc@gmail.com
                 </p>
               </a>
               <a
-                className="px-1 py-3 my-5 text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
+                className="px-1 py-3 flex flex-col text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
                 href="mailto:goodfoundationllc@gmail.com"
                 // style={{ marginTop: '50px' }}
               >
@@ -144,8 +142,7 @@ const Contact = () => {
                   size="xl"
                   className="mb-3"
                 />
-                <br></br>
-                <p style={{ width: "100%", fontSize: "0.9em" }}>
+                <p style={{ width: "100%", margin: "0" }}>
                   Mon-Fri: 9:00AM - 5:00PM <br></br> Sat-Sun: 10:00AM - 1:00PM
                 </p>{" "}
               </a>
