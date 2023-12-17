@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Info = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-10 mx-auto md:w-3/5 h-5/6">
+    <div className="flex flex-col pt-10 mt-10 mx-auto md:w-3/5 h-screen">
       <h1 className="text-5xl font-extrabold text-center">
         <span className="block">Good Foundation Group</span>
         <span className="block text-blue-600 text-3xl mt-3">In Florida</span>
