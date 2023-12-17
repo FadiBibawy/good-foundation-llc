@@ -1,27 +1,16 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// import { Link } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Link as Scroll } from "react-scroll";
 import Logoimg from "../images/GFLogo.png";
 
 const Navbar = () => {
   const [showMenu, setMenuVisibility] = useState(false);
   const toggleMenu = () => setMenuVisibility(!showMenu);
 
-  const servicesRef = useRef(null);
-
-  const servicesScroll = () => servicesRef.current.scrollIntoView();
-
   return (
     <header className="flex items-center justify-between space-x-3 text-gray-800">
-      <Link
-        to="/"
-        spy={true}
-        smooth={true}
-        offset={50}
-        duration={500}
-        className="text-2xl font-bold"
-      >
+      <Link to="/" className="text-2xl font-bold">
         <img src={Logoimg} alt="Logo" width="200"></img>
       </Link>
 
@@ -42,7 +31,7 @@ const Navbar = () => {
         ].join(" ")}
       >
         <nav className="flex flex-col w-full space-x-0 space-y-3 text-center md:space-y-0 md:space-x-3 md:flex-row">
-          <Link
+          <Scroll
             to="services"
             spy={true}
             smooth={true}
@@ -52,10 +41,10 @@ const Navbar = () => {
             className="px-5 py-2 rounded hover:bg-gray-100"
           >
             Services
-          </Link>
+          </Scroll>
         </nav>
-        <Link
-          to="#contact"
+        <Scroll
+          to="contact"
           spy={true}
           smooth={true}
           offset={50}
@@ -64,7 +53,7 @@ const Navbar = () => {
           scroll={false}
         >
           Contact us
-        </Link>
+        </Scroll>
       </div>
     </header>
   );
