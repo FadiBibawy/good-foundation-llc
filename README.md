@@ -6,7 +6,7 @@ Good Foundation🏗️
 Craftsmanship in Construction
 -----------------------------
 
-![GoodFoundation - Craftsmanship in Construction](./scr/images/GFLogo.png)
+![GoodFoundation - Craftsmanship in Construction](./src/images/GFLogo.png)
 
 Embark on a construction journey with Good Foundation, where every project is a testament to craftsmanship, durability, and the art of construction. We leverage modern technologies to build spaces that stand the test of time, ensuring quality and attention to detail.
 
