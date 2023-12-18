@@ -194,7 +194,7 @@ const Contact = () => {
                   goodfoundationllc@gmail.com
                 </p>
               </a>
-              <a
+              <div
                 className="px-1 py-3 flex flex-col text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
                 href="mailto:goodfoundationllc@gmail.com"
                 // style={{ marginTop: '50px' }}
@@ -207,7 +207,7 @@ const Contact = () => {
                 <p style={{ width: "100%", margin: "0" }}>
                   Mon-Fri: 9:00AM - 5:00PM <br></br> Sat-Sun: 10:00AM - 1:00PM
                 </p>{" "}
-              </a>
+              </div>
               {/* <div className="space-y-5">
                 <h6 className="uppercase">What&apos;s Included</h6>
                 <ul className="leading-10 list-disc list-inside">
