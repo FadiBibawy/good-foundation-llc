@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <div className="w-full py-10" id="contact">
-      <div className="relative flex flex-col px-5 mx-auto space-y-5 md:w-4/4">
+      <div className="relative flex flex-col mx-auto space-y-5 md:w-4/4">
         <div className="flex flex-col items-center">
           <h6 className="font-bold text-center text-blue-600 uppercase mb-3">
             Contact Us
