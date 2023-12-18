@@ -49,7 +49,7 @@ const Contact = () => {
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="text"
-                      className="peer block min-h-[auto] w-full rounded border border-solid border-gray-500 bg-transparent py-[0.5rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      className="inputText peer block min-h-[auto] w-full rounded border border-solid border-gray-500 bg-transparent py-[0.5rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleInput90"
                       placeholder="Name"
                       value={name}
@@ -70,7 +70,7 @@ const Contact = () => {
                   <div class="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="email"
-                      class="peer block min-h-[auto] w-full rounded border border-gray-300 bg-transparent py-[0.5rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      class=" inputText peer block min-h-[auto] w-full rounded border border-gray-300 bg-transparent py-[0.5rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleInput91"
                       placeholder="Email address"
                       value={email}
@@ -89,7 +89,7 @@ const Contact = () => {
                   </div>
                   <div class="relative mb-6" data-te-input-wrapper-init>
                     <textarea
-                      class="peer block min-h-[auto] w-full rounded border border-gray-300 bg-transparent py-[0.5rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      class=" inputText peer block min-h-[auto] w-full rounded border border-gray-300 bg-transparent py-[0.5rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:outline-none peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleFormControlTextarea1"
                       rows="4"
                       placeholder="Your message"
