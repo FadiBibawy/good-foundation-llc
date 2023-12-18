@@ -40,7 +40,7 @@ const Contact = () => {
             system
           </p> */}
         </div>
-        <div className="flex flex-col align-items-center p-10 space-x-0 space-y-5 bg-gray-100 rounded-lg md:space-y-0 md:space-x-5 md:flex-row">
+        <div className="flex flex-col align-items-center p-0 space-x-0 space-y-5 bg-gray-100 rounded-lg md:space-y-0 md:space-x-5 md:flex-row">
           <div className="container my-5 mx-auto md:px-6">
             <section className="mb-3 text-center">
               <div className="mx-auto max-w-[700px] md:px-3">
