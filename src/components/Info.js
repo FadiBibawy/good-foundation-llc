@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link as Scroll } from "react-scroll";
+
 const Info = () => {
   return (
     <div
@@ -22,12 +23,12 @@ const Info = () => {
         solutions.
       </p>
       <div className="flex items-center justify-center space-x-5 pt-16">
-        <Link
-          href="#contact"
+        <Scroll
+          to="contact"
           className="px-10 py-3 text-center text-white bg-blue-600 rounded shadow hover:bg-blue-500"
         >
           Contact Us
-        </Link>
+        </Scroll>
       </div>
     </div>
   );
