@@ -24,7 +24,7 @@ const Services = () => {
             offering a one-of-a-kind experience.
           </p>
         </div>
-        <div className="flex flex-col py-10 space-x-0 space-y-10 md:space-y-0 md:space-x-5 md:flex-row">
+        <div className="flex flex-col py-10 space-x-0 space-y-10 md:space-y-0 md:space-x-5 md:flex-row sm:space-x-4 sm:space-x-reverse">
           <div className="flex flex-col items-center justify-start px-5 space-y-3 md:w-1/3">
             <div className="flex items-center justify-center w-16 h-16 bg-gray-600 rounded-full">
               <FontAwesomeIcon

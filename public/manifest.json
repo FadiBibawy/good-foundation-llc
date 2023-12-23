@@ -1,19 +1,19 @@
 {
   "short_name": "Good Foundation LLC",
-  "name": "Create React App Sample",
+  "name": "Good Foundation LLC construction in Florida",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "GFLogo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "GFLogo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "GFLogo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
