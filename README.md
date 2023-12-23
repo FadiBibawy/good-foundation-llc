@@ -20,7 +20,6 @@ Good Foundation is built with cutting-edge technologies to ensure efficiency, re
 ### Core Technologies
 
 *   [React.js](https://reactjs.org) - **17.0.2**
-*   [Next.js](https://nextjs.org) - **13.1.0**
 *   [Node.js](https://nodejs.org) - **14.17.6**
 *   [Tailwind CSS](https://tailwindcss.com) - **3.1.8**
 
