@@ -1,11 +1,13 @@
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height: 19rem;
-  padding: 1.6rem;
+  --slide-height: 40rem;
+  /* padding: 1.6rem; */
 }
 .embla__viewport {
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: var(--slide-height);
 }
 .embla__container {
   backface-visibility: hidden;
@@ -24,6 +26,7 @@
   height: var(--slide-height);
   width: 100%;
   object-fit: cover;
+  max-width: 100%;
 }
 .embla__slide__number {
   width: 4.6rem;
@@ -56,4 +59,102 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+.embla__button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.embla__buttons {
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  /* left: 1rem; */
+  bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .embla__buttons {
+    display: none;
+  }
+}
+
+.embla__button {
+  z-index: 1;
+  color: var(--background-site);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+.embla__button:disabled {
+  opacity: 0.3;
+}
+.embla__button__svg {
+  width: 65%;
+  height: 65%;
+}
+.embla__dot {
+  /* -webkit-appearance: none; */
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.embla__dots {
+  z-index: 1;
+  position: relative;
+  left: 10rem;
+  bottom: 2.5rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  flex-wrap: nowrap;
+  max-width: 80%;
+}
+
+.embla__dot {
+  width: 2.4rem;
+  height: 0.7rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  background-color: black;
+  opacity: 30%;
+}
+
+.embla__dot:hover {
+  opacity: 50%;
+}
+
+.embla__dot--selected {
+  opacity: 0.7;
+}
+
+/* Updated styles to center the dots */
+.embla__dots::before,
+.embla__dots::after {
+  content: "";
+  flex-grow: 1;
+}
+
+.embla__dot--selected {
+  /* Adjust the position of the selected dot */
+  /* transform: translateY(-50%); */
 }

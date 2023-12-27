@@ -26,7 +26,35 @@ import image25 from "../images/25.jpeg";
 import image26 from "../images/26.jpeg";
 import image27 from "../images/27.jpeg";
 
-export const images = [image1, image2, image3, image4, image5, image6, image7];
+export const images = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
+  image24,
+  image25,
+  image26,
+  image27,
+];
 
 const imageByIndex = (index) => images[index % images.length];
 

@@ -40,7 +40,20 @@ const Navbar = () => {
             // scroll={false}
             className="px-5 py-2 rounded hover:bg-gray-100"
           >
-            Services
+            <strong>Services</strong>
+          </Scroll>
+        </nav>
+        <nav className="flex flex-col w-full space-x-0 space-y-3 text-center md:space-y-0 md:space-x-3 md:flex-row">
+          <Scroll
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+            // scroll={false}
+            className="px-5 py-2 rounded hover:bg-gray-100"
+          >
+            <strong>Projects</strong>
           </Scroll>
         </nav>
         <Scroll

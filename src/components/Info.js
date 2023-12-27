@@ -1,11 +1,6 @@
 import { Link as Scroll } from "react-scroll";
-import Carousel from "./Carousel";
 
 const Info = () => {
-  const OPTIONS = {};
-  const SLIDE_COUNT = 5;
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
   return (
     <div className="flex flex-col pt-10 mt-10 mx-auto md:w-3/5" id="info">
       <h1 className="text-5xl font-extrabold text-center">
@@ -32,7 +27,6 @@ const Info = () => {
           Contact Us
         </Scroll>
       </div>
-      <Carousel slides={SLIDES} options={OPTIONS} />
     </div>
   );
 };
