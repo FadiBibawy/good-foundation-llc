@@ -1,20 +1,16 @@
 import React, { useState, useEffect, useCallback } from "react";
-
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-
 import {
   DotButton,
   PrevButton,
   NextButton,
 } from "./EmblaCarouselArrowsDotsButtons";
-
 import imageByIndex from "./imageByIndex";
 
 const Carousel = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
-
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -62,7 +58,13 @@ const Carousel = (props) => {
     emblaApi.on("reInit", onInit);
     emblaApi.on("reInit", onSelect);
     emblaApi.on("select", onSelect);
-  }, [emblaApi, onInit, onSelect]);
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [emblaApi, onInit, onSelect, handleKeyDown]);
 
   return (
     <div>
@@ -104,17 +106,6 @@ const Carousel = (props) => {
           ))}
         </div>
       </div>
-      {/* <div className="embla__dots">
-        {scrollSnaps.map((_, index) => (
-          <DotButton
-            key={index}
-            onClick={() => scrollTo(index)}
-            className={"embla__dot".concat(
-              index === selectedIndex ? " embla__dot--selected" : ""
-            )}
-          />
-        ))}
-      </div> */}
     </div>
   );
 };
