@@ -16,6 +16,7 @@ const Contact = () => {
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const emailEndPoint = process.env.REACT_APP_SEND_EMAIL_ENDPOINT
 
   // useEffect(() => {
   //   // Check if user is authenticated
@@ -44,22 +45,14 @@ const Contact = () => {
 
       console.log('handleSendMessage triggered');
 
-      // const response = await axios.get(
-      //   "https://us-central1-good-foundation-llc.cloudfunctions.net/oauthCallback" // Replace with your OAuth Cloud Function URL
-      // );
-
-      // if (response.status === 200) {
-      //   console.log("authenticateeeeeeeeddddddddddd!!")
-      //   setIsAuthenticated(true);
-      // }
       if (!name || !message || (!email && !phone)) {
         setError("Please fill in the required fields.");
         return;
       }
 
       setError(null);
-
-      await axios.post("https://us-central1-good-foundation-llc.cloudfunctions.net/sendEmail", {
+      console.log(emailEndPoint);
+      await axios.post(emailEndPoint, {
         name,
         email,
         phone,
