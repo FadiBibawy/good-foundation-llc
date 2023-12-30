@@ -43,7 +43,7 @@ const Contact = () => {
       setError(null)
       setSuccess(false)
 
-      console.log('handleSendMessage triggered');
+      // console.log('handleSendMessage triggered');
 
       if (!name || !message || (!email && !phone)) {
         setError("Please fill in the required fields.");
@@ -51,7 +51,6 @@ const Contact = () => {
       }
 
       setError(null);
-      console.log(emailEndPoint);
       await axios.post(emailEndPoint, {
         name,
         email,
