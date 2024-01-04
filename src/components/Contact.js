@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import CloseButton from "react-bootstrap/CloseButton";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +8,9 @@ import {
   faEnvelope,
   faBusinessTime,
 } from "@fortawesome/free-solid-svg-icons";
+
+import Form from "react-bootstrap/Form";
+import * as formik from "formik";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -16,7 +20,7 @@ const Contact = () => {
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
-  const emailEndPoint = process.env.REACT_APP_SEND_EMAIL_ENDPOINT
+  const emailEndPoint = process.env.REACT_APP_SEND_EMAIL_ENDPOINT;
 
   // useEffect(() => {
   //   // Check if user is authenticated
@@ -40,8 +44,8 @@ const Contact = () => {
 
   const handleSendMessage = async () => {
     try {
-      setError(null)
-      setSuccess(false)
+      setError(null);
+      setSuccess(false);
 
       // console.log('handleSendMessage triggered');
 
@@ -51,12 +55,15 @@ const Contact = () => {
       }
 
       setError(null);
-      await axios.post(emailEndPoint, {
-        name,
-        email,
-        phone,
-        message
-      }, { headers: { 'Content-Type': 'application/json' } }
+      await axios.post(
+        emailEndPoint,
+        {
+          name,
+          email,
+          phone,
+          message,
+        },
+        { headers: { "Content-Type": "application/json" } }
       );
 
       // Show success message
@@ -71,7 +78,6 @@ const Contact = () => {
       console.error("Error sending message:", error);
       // Handle error (e.g., show an error message to the user)
       setError("Error sending message. Please try again.");
-
     }
   };
 
@@ -130,6 +136,7 @@ const Contact = () => {
                       required
                     />
                     <label
+                      for="validationServer01"
                       className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.5rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary ${
                         name
                           ? "-translate-y-[0.5rem] scale-[0.8] text-primary "
@@ -207,23 +214,23 @@ const Contact = () => {
 
                   {/* Display error message */}
                   {error && (
-                    <div className="text-sm flex justify-between text-red-600 bg-red-200 pl-1 rounded mb-1">
+                    <div className="text-sm flex justify-between text-red-600 bg-red-50 pl-1 rounded mb-1">
                       <span className="pr-2">{error}</span>
-                      <button
+                      {/* <button
                         onClick={handleCloseMessage}
-                        className="text-red-800 font-bold bg-red-100 rounded closeButton"
+                        className="text-red-800 font-bold bg-red-50 rounded closeButton"
                       >
                         X
-                      </button>
+                      </button> */}
+                      <CloseButton onClick={handleCloseMessage} />
                     </div>
                   )}
 
                   {/* Display success message */}
                   {success && (
-                    <div className="text-sm text-green-600 bg-green-200 p-2 rounded flex justify-between">
+                    <div className="text-sm text-green-600 bg-green-50 p-2 rounded flex justify-between">
                       <span className="pr-2">
-                        Thank you for your message.
-                        We will contact you shortly!
+                        Thank you for your message. We will contact you shortly!
                       </span>
                       <button
                         onClick={handleCloseMessage}
