@@ -286,10 +286,10 @@ const Contact = () => {
             <div className="flex flex-col w-full h-full px-7 py-4 space-y-5 bg-gray-100 border-t">
               <a
                 className="px-2 py-3 flex flex-col  text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
-                href="Tel: 727-439-9986 "
+                href="Tel: 727-804-9688 "
               >
                 <FontAwesomeIcon icon={faPhone} size="xl" className="mb-3" />
-                <p style={{ width: "100%", margin: "0" }}>727-439-9986</p>
+                <p style={{ width: "100%", margin: "0" }}>727-804-9688</p>
               </a>
               <a
                 className="px-2 py-3 flex flex-col text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
