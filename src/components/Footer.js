@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import {
   Link as Scroll,
-  Button,
-  Element,
-  Events,
-  scrollSpy,
+  // Button,
+  // Element,
+  // Events,
+  // scrollSpy,
   animateScroll,
 } from "react-scroll";
 
