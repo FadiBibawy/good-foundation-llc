@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import CloseButton from "react-bootstrap/CloseButton";
 
@@ -9,8 +9,8 @@ import {
   faBusinessTime,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Form from "react-bootstrap/Form";
-import * as formik from "formik";
+// import Form from "react-bootstrap/Form";
+// import * as formik from "formik";
 
 const Contact = () => {
   const [name, setName] = useState("");
