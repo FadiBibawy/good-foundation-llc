@@ -64,7 +64,7 @@ exports.sendEmail = functions.https.onRequest(async (req, res) => {
 
       const mailOptions = {
         from: gmailEmail,
-        to: "goodfoundationllc@gmail.com",
+        to: "contact@goodfoundation.us",
         subject: "New Contact Form Submission",
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
       };
