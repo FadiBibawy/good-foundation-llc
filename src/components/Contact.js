@@ -293,17 +293,17 @@ const Contact = () => {
               </a>
               <a
                 className="px-2 py-3 flex flex-col text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
-                href="mailto:goodfoundationllc@gmail.com"
+                href="mailto:contact@goodfoundation.us"
                 // style={{ marginTop: '50px' }}
               >
                 <FontAwesomeIcon icon={faEnvelope} size="xl" className="mb-3" />
                 <p style={{ width: "100%", margin: "0" }}>
-                  goodfoundationllc@gmail.com
+                  contact@goodfoundation.us
                 </p>
               </a>
               <div
                 className="px-1 py-3 flex flex-col text-lg text-center text-blue-600 bg-white rounded shadow hover:bg-blue-50"
-                href="mailto:goodfoundationllc@gmail.com"
+                href="mailto:contact@goodfoundation.us"
                 // style={{ marginTop: '50px' }}
               >
                 <FontAwesomeIcon
