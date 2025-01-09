@@ -26,10 +26,10 @@ function Footer() {
           >
             About
           </Scroll>
-          <a className="px-5 py-2 text-xl rounded hover:underline">Showcase</a>
-          <a className="px-5 py-2 text-xl rounded hover:underline">Community</a>
-          <a className="px-5 py-2 text-xl rounded hover:underline">Privacy</a>
-          <a className="px-5 py-2 text-xl rounded hover:underline">Terms</a>
+          <a href="/" className="px-5 py-2 text-xl rounded hover:underline">Showcase</a>
+          <a href="/" className="px-5 py-2 text-xl rounded hover:underline">Community</a>
+          <a href="/" className="px-5 py-2 text-xl rounded hover:underline">Privacy</a>
+          <a href="/" className="px-5 py-2 text-xl rounded hover:underline">Terms</a>
         </footer>
         <p className="py-5 text-center text-gray-400">
           &copy; Good Foundation. All rights reserved {new Date().getFullYear()}
